@@ -25,21 +25,37 @@
     Contact
 </header>
 
+<h4 id="dateClick" onclick="showDate(event)"> Click here for Date</h4>
 
-<article class="NiceText">
+<article id="Contact_Information" class="NiceText">
+
     <h2>My personal contact info:</h2>
-<p>
+
+    <p>
     Email: octavian-florin.staicu@my.fmi.unibuc.ro
-</p>
-<p>
+    </p>
+
+    <p>
     Tel: 0736659442
-</p>
-<p>
-    Adress: Facultatea de Matematica si Informatica - Universitatea din Bucuresti; Str. Academiei nr.14, sector 1, C.P. 010014, Bucuresti, Romania
-</p>
+    </p>
+
+    <p>
+
+    <a id="facultyAddress" href="http://fmi.unibuc.ro/en/" onclick="changeAddress()" target="__blank">Adress: Facultatea de Matematica si Informatica - Universitatea din Bucuresti;</a> Str. Academiei nr.14, sector 1, C.P. 010014, Bucuresti, Romania
+    </p>
+
 </article>
+
+<p>Did you like my website? Yes:<input id="checkYes"  type="checkbox"></p>
+<p id="pForText"></p>
+
+<p>Yes Very Much:<input id="checkYesVeryMuch" onclick="rockON()" type="checkbox"></p>
+
+
+<p id="insertText" onclick="welcomeToTheExit()"> Is this the end?</p>
 <footer>
     Copyright © 2020 TAV High Load Impact. All Rights Reserved
 </footer>
+
 </body>
 </html>
