@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/stylesheet.css">
+    <script src="./JS/menu.js"></script>
+    <script src="./JS/contactJavaScript.js"></script>
+    <title>The Great Awakening</title>
+</head>
+
+<body>
+
+
+<nav class="AllMenu" id="AllMenu">
+    <div class="dot" id="dot" onclick="Dot()">
+        <ul class="Selector" id="Selector">
+            <li><a href="index.ejs">Home</a></li>
+            <li><a href="galerie.ejs">Galery</a></li>
+            <li><a href="contact.ejs">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="BodyTitle">
+    Contact
+</header>
+<form action="/logout?_method=DELETE" method="POST">
+    <button type="submit">LOG OUT</button>
+  </form>
+
+<h4 id="dateClick" onclick="showDate(event)"> Click here for Date</h4>
+
+<article id="Contact_Information" class="NiceText">
+
+    <h2>My personal contact info:</h2>
+
+    <p>
+    Email: octavian-florin.staicu@my.fmi.unibuc.ro
+    </p>
+
+    <p>
+    Tel: 0736659442
+    </p>
+
+    <p>
+    <a id="facultyAddress" href="http://fmi.unibuc.ro/en/" onclick="changeAddress()" target="__blank">Adress: Facultatea de Matematica si Informatica - Universitatea din Bucuresti;</a> Str. Academiei nr.14, sector 1, C.P. 010014, Bucuresti, Romania
+    </p>
+
+    <table style="margin-left: 40%;">
+        <tr>
+            <th>Sponsors</th>
+            <th>Full Impact</th>
+            <th>Co.OP Industries</th>
+        </tr>
+    </table>
+</article>
+
+<p>Did you like my website? Yes:<input id="checkYes"  type="checkbox"></p>
+<p id="pForText"></p>
+
+<p>Yes Very Much:<input id="checkYesVeryMuch" onclick="rockON()" type="checkbox"></p>
+
+<p id="insertText" onclick="welcomeToTheExit()"> Is this the end?</p>
+<footer>
+    <p id="timeSpent"></p>
+    Copyright © 2020 TAV High Load Impact. All Rights Reserved
+</footer>
+
+</body>
+</html>

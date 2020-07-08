@@ -1,0 +1,19 @@
+<h1>Register</h1>
+<link rel="stylesheet" href="./CSS/stylesheet.css">
+<form action="/register" method="POST">
+  <div>
+    <label style="display: inline-block;" for="name"><p>Name</p></label>
+    <input style="height:30px; width:150px; display: inline-block; margin-left: 10px;" type="text" id="name" name="name" required>
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input style="height:30px; width:250px;" type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input style="height:30px; width:150px;" type="password" id="password" name="password" required>
+  </div>
+  <button type="submit">Register</button>
+</form>
+<p></p>
+<a href="/login">Login</a>
